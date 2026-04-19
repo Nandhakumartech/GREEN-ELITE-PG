@@ -186,7 +186,7 @@
   .faq-a{max-height:0;overflow:hidden;transition:.4s ease;color:var(--muted);font-size:14.5px}
   .faq-item.open .faq-a{max-height:300px;padding:0 22px 22px}
   @media(max-width:700px){.faq-grid{grid-template-columns:1fr}}
-  .cta-banner{background:linear-gradient(135deg,rgba(11,42,34,.92),rgba(23,89,67,.85)),url('./images/cta-bg.jpg') center/cover;color:#fff;text-align:center;border-radius:32px;padding:70px 40px;margin-bottom:-80px;box-shadow:var(--shadow-lg);position:relative;z-index:5}
+  .cta-banner{background:linear-gradient(135deg,rgba(11,42,34,.92),rgba(23,89,67,.85)),url('./cta-bg.jpg') center/cover;color:#fff;text-align:center;border-radius:32px;padding:70px 40px;margin-bottom:-80px;box-shadow:var(--shadow-lg);position:relative;z-index:5}
   .cta-banner h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px;color:#fff}
   .cta-banner p{color:rgba(255,255,255,.82);max-width:560px;margin:0 auto 30px}
   .cta-banner .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -248,6 +248,34 @@
   .reveal{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.9,.3,1.05)}
   .reveal.on{opacity:1;transform:none}
 </style>
+
+<style id="gepg-responsive-fix">
+* { box-sizing: border-box; }
+html, body { max-width: 100%; overflow-x: hidden; }
+img, video, picture, iframe { max-width: 100%; height: auto; display: block; }
+.container, .wrapper, .content, main, section, header, footer { max-width: 100%; }
+@media (max-width: 1024px) {
+  .grid, [class*="grid-"], .row, .columns { gap: 16px !important; }
+  .col-3, .col-4, .col-6 { width: 50% !important; }
+}
+@media (max-width: 768px) {
+  body { font-size: 16px; line-height: 1.5; }
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.4rem !important; }
+  h3 { font-size: 1.15rem !important; }
+  .container, .wrapper, main, section, header, footer { padding-left: 16px !important; padding-right: 16px !important; }
+  .grid, [class*="grid-"], .row, .columns { display: block !important; }
+  .col-3, .col-4, .col-6, [class*="col-"] { width: 100% !important; max-width: 100% !important; }
+  nav ul, .nav, .menu { flex-wrap: wrap !important; gap: 8px !important; }
+  .hero, .banner { min-height: auto !important; padding: 32px 16px !important; }
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+  .btn, button, a.btn { width: 100%; max-width: 360px; display: inline-block; text-align: center; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem !important; }
+  .hero, .banner { padding: 24px 12px !important; }
+}
+</style>
 </head>
 <body>
 
@@ -288,9 +316,9 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-card main"><img src="./images/exterior-hero.jpg" alt="Green Elite PG building exterior" /></div>
-        <div class="hero-card chip-1"><img src="./images/room-double-ac.jpg" alt="Double sharing AC room" /></div>
-        <div class="hero-card chip-2"><img src="./images/hallway.jpg" alt="Corridor" /></div>
+        <div class="hero-card main"><img src="./exterior-hero.jpg" alt="Green Elite PG building exterior" /></div>
+        <div class="hero-card chip-1"><img src="./room-double-ac.jpg" alt="Double sharing AC room" /></div>
+        <div class="hero-card chip-2"><img src="./hallway.jpg" alt="Corridor" /></div>
         <div class="hero-badge">
           <i class="fa-solid fa-shield-halved"></i>
           <div><strong>Verified &amp; Trusted</strong><small>GSTIN · 24×7 Warden · CCTV</small></div>
@@ -347,7 +375,7 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-visual reveal">
-        <img src="./images/exterior-building.jpg" alt="Green Elite PG entrance" />
+        <img src="./exterior-building.jpg" alt="Green Elite PG entrance" />
         <div class="about-float">
           <div class="icon"><i class="fa-solid fa-award"></i></div>
           <div>
@@ -409,7 +437,7 @@
     <div class="rooms-grid">
       <div class="room-card reveal">
         <div class="room-img">
-          <img src="./images/room-four.jpg" alt="4 sharing room" />
+          <img src="./room-four.jpg" alt="4 sharing room" />
           <span class="room-tag">Most Affordable</span>
         </div>
         <div class="room-body">
@@ -429,7 +457,7 @@
       </div>
       <div class="room-card featured reveal">
         <div class="room-img">
-          <img src="./images/room-double-ac.jpg" alt="Double sharing AC room" />
+          <img src="./room-double-ac.jpg" alt="Double sharing AC room" />
           <span class="room-tag gold">⭐ Most Popular</span>
         </div>
         <div class="room-body">
@@ -449,7 +477,7 @@
       </div>
       <div class="room-card reveal">
         <div class="room-img">
-          <img src="./images/room-triple.jpg" alt="Triple sharing room" />
+          <img src="./room-triple.jpg" alt="Triple sharing room" />
           <span class="room-tag">Balanced</span>
         </div>
         <div class="room-body">
@@ -479,18 +507,18 @@
       <p>Real photos from our Veerapuram campus.</p>
     </div>
     <div class="gallery-grid">
-      <div class="g-item tall reveal"><img src="./images/exterior-hero.jpg" alt="Building frontage" /><span class="label">Building &amp; Balconies</span></div>
-      <div class="g-item reveal"><img src="./images/room-premium.jpg" alt="Single room" /><span class="label">Single Bed Room</span></div>
-      <div class="g-item reveal"><img src="./images/room-double-ac.jpg" alt="Double sharing AC" /><span class="label">Double Sharing A/C</span></div>
-      <div class="g-item wide reveal"><img src="./images/hallway.jpg" alt="Corridor" /><span class="label">Clean, Spacious Corridors</span></div>
-      <div class="g-item reveal"><img src="./images/bathroom.jpg" alt="Bathroom" /><span class="label">Modern Attached Bathroom</span></div>
-      <div class="g-item reveal"><img src="./images/room-twin.jpg" alt="Twin sharing" /><span class="label">Twin Sharing</span></div>
-      <div class="g-item reveal"><img src="./images/room-double.jpg" alt="Double sharing" /><span class="label">Double Sharing</span></div>
-      <div class="g-item reveal"><img src="./images/room-four.jpg" alt="4 sharing" /><span class="label">4 Sharing</span></div>
-      <div class="g-item reveal"><img src="./images/room-triple.jpg" alt="Triple sharing" /><span class="label">Triple Sharing</span></div>
-      <div class="g-item wide reveal"><img src="./images/exterior-building.jpg" alt="Entrance gate" /><span class="label">Entrance Gate</span></div>
-      <div class="g-item reveal"><img src="./images/signboard-day.jpg" alt="Campus signboard" /><span class="label">Campus Signboard</span></div>
-      <div class="g-item reveal"><img src="./images/signboard-post.jpg" alt="Street presence" /><span class="label">On Nehru Street</span></div>
+      <div class="g-item tall reveal"><img src="./exterior-hero.jpg" alt="Building frontage" /><span class="label">Building &amp; Balconies</span></div>
+      <div class="g-item reveal"><img src="./room-premium.jpg" alt="Single room" /><span class="label">Single Bed Room</span></div>
+      <div class="g-item reveal"><img src="./room-double-ac.jpg" alt="Double sharing AC" /><span class="label">Double Sharing A/C</span></div>
+      <div class="g-item wide reveal"><img src="./hallway.jpg" alt="Corridor" /><span class="label">Clean, Spacious Corridors</span></div>
+      <div class="g-item reveal"><img src="./bathroom.jpg" alt="Bathroom" /><span class="label">Modern Attached Bathroom</span></div>
+      <div class="g-item reveal"><img src="./room-twin.jpg" alt="Twin sharing" /><span class="label">Twin Sharing</span></div>
+      <div class="g-item reveal"><img src="./room-double.jpg" alt="Double sharing" /><span class="label">Double Sharing</span></div>
+      <div class="g-item reveal"><img src="./room-four.jpg" alt="4 sharing" /><span class="label">4 Sharing</span></div>
+      <div class="g-item reveal"><img src="./room-triple.jpg" alt="Triple sharing" /><span class="label">Triple Sharing</span></div>
+      <div class="g-item wide reveal"><img src="./exterior-building.jpg" alt="Entrance gate" /><span class="label">Entrance Gate</span></div>
+      <div class="g-item reveal"><img src="./signboard-day.jpg" alt="Campus signboard" /><span class="label">Campus Signboard</span></div>
+      <div class="g-item reveal"><img src="./signboard-post.jpg" alt="Street presence" /><span class="label">On Nehru Street</span></div>
     </div>
   </div>
 </section>
