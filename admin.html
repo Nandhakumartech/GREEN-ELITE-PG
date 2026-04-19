@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Admin · Enquiry · Green Elite PG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root{--green-900:#0b2a22;--green-800:#103d30;--green-700:#175943;--green-600:#1f7a5b;--green-500:#2fae7f;--green-400:#4fd39e;--gold:#d4b36a;--gold-2:#f0d68a;--cream:#f6f2e8;--ink:#0e1b16;--muted:#6a7a72}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(ellipse at 10% 0%,rgba(47,174,127,.28),transparent 55%),radial-gradient(ellipse at 100% 100%,rgba(212,179,106,.18),transparent 50%),linear-gradient(135deg,#08221c 0%,#0b2a22 50%,#103d30 100%);color:#fff;min-height:100vh;padding:24px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:'Playfair Display',serif;letter-spacing:-.01em;line-height:1.15}
+  a{color:var(--gold-2);text-decoration:none}
+  a:hover{color:var(--gold)}
+  .adm-nav{max-width:1060px;margin:0 auto 28px;background:rgba(11,42,34,.55);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .logo{display:flex;align-items:center;gap:12px;color:#fff}
+  .logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--green-500),var(--gold));display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;box-shadow:0 8px 20px -6px rgba(47,174,127,.5)}
+  .logo-text{font-family:'Playfair Display',serif;font-size:20px}
+  .logo-text span{color:var(--gold-2)}
+  .logo-sub{font-size:11.5px;color:rgba(240,214,138,.85);letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin-left:6px;padding-left:10px;border-left:1px solid rgba(255,255,255,.18)}
+  .adm-nav-right{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:13.5px;border:none;cursor:pointer;transition:.3s;text-decoration:none;white-space:nowrap}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--green-900)}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 25px -8px rgba(212,179,106,.55)}
+  .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
+  .btn-ghost:hover{background:rgba(255,255,255,.15)}
+  .btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 25px -8px rgba(37,211,102,.55)}
+  .shell{max-width:1060px;margin:0 auto}
+  .ribbon{background:linear-gradient(135deg,rgba(212,179,106,.18),rgba(47,174,127,.15));border:1px solid rgba(212,179,106,.25);border-radius:18px;padding:14px 18px;margin-bottom:22px;display:flex;gap:12px;align-items:center;color:var(--gold-2);font-size:13px}
+  .ribbon i{font-size:18px}
+  .page-head{margin-bottom:32px}
+  .page-head .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border-radius:999px;background:rgba(212,179,106,.12);color:var(--gold-2);font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+  .page-head .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(212,179,106,.2)}
+  .page-head h1{font-size:clamp(1.8rem,3.8vw,2.6rem);margin-bottom:10px}
+  .page-head p{color:rgba(255,255,255,.72);max-width:640px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(14px);border-radius:20px;padding:26px;position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(47,174,127,.15),transparent 70%)}
+  .card.primary{background:linear-gradient(160deg,rgba(47,174,127,.15),rgba(23,89,67,.25));border-color:rgba(47,174,127,.3)}
+  .card.primary::before{background:radial-gradient(circle,rgba(212,179,106,.2),transparent 70%)}
+  .card h3{font-size:1.3rem;margin-bottom:4px;color:#fff}
+  .card .sub{color:rgba(255,255,255,.6);font-size:13px;margin-bottom:22px;display:flex;align-items:center;gap:8px}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(47,174,127,.18);color:var(--green-400);border:1px solid rgba(47,174,127,.3)}
+  .pill.gold{background:rgba(212,179,106,.18);color:var(--gold-2);border-color:rgba(212,179,106,.3)}
+  .row{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:14px 0;border-bottom:1px dashed rgba(255,255,255,.1)}
+  .row:last-child{border-bottom:0}
+  .row .lbl{color:rgba(255,255,255,.55);font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:600;padding-top:2px}
+  .row .val{font-size:15px;color:#fff;font-weight:500;word-break:break-word}
+  .row .val.mono{font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--gold-2)}
+  .row .val.muted{color:rgba(255,255,255,.55);font-style:italic;font-weight:400}
+  @media(max-width:540px){.row{grid-template-columns:1fr;gap:2px}.row .lbl{font-size:11px}}
+  .status-card{display:flex;flex-direction:column;gap:14px}
+  .status-opt{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:center;cursor:pointer;transition:.2s}
+  .status-opt:hover{background:rgba(255,255,255,.08);border-color:var(--green-400)}
+  .status-opt.active{background:linear-gradient(135deg,rgba(47,174,127,.2),rgba(47,174,127,.05));border-color:var(--green-500);box-shadow:0 10px 24px -10px rgba(47,174,127,.5)}
+  .status-opt .dot{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.3);flex-shrink:0;transition:.2s}
+  .status-opt.active .dot{background:var(--green-400);box-shadow:0 0 0 5px rgba(79,211,158,.25)}
+  .status-opt strong{color:#fff;font-size:14px}
+  .status-opt small{color:rgba(255,255,255,.55);font-size:12px;display:block;margin-top:2px}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .actions .btn{padding:11px 18px;font-size:13px}
+  .empty{text-align:center;padding:70px 30px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.15);border-radius:22px}
+  .empty i{font-size:44px;color:var(--gold-2);margin-bottom:18px;opacity:.7}
+  .empty h2{font-size:1.7rem;margin-bottom:10px}
+  .empty p{color:rgba(255,255,255,.7);max-width:460px;margin:0 auto 22px}
+  .adm-foot{max-width:1060px;margin:32px auto 0;padding:18px 0;text-align:center;color:rgba(255,255,255,.5);font-size:12px;border-top:1px solid rgba(255,255,255,.08)}
+  .adm-foot .gstin{display:inline-block;margin-top:6px;padding:4px 10px;border-radius:999px;background:rgba(212,179,106,.1);color:var(--gold-2);font-size:11px;letter-spacing:.18em;font-weight:600}
+  .reveal{opacity:0;transform:translateY(20px);animation:rise .7s .1s forwards cubic-bezier(.2,.9,.3,1.05)}
+  .reveal.d2{animation-delay:.2s}
+  .reveal.d3{animation-delay:.3s}
+  @keyframes rise{to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="adm-nav">
+  <div class="logo">
+    <div class="logo-mark">GE</div>
+    <div><div class="logo-text">Green<span>Elite</span> PG</div></div>
+    <span class="logo-sub">Admin</span>
+  </div>
+  <div class="adm-nav-right">
+    <a href="./index.html" class="btn btn-ghost"><i class="fa-solid fa-arrow-left"></i> Back to Site</a>
+    <a href="#" onclick="location.reload()" class="btn btn-ghost"><i class="fa-solid fa-rotate"></i> Refresh</a>
+  </div>
+</div>
+<div class="shell" id="content"></div>
+<div class="adm-foot">Green Elite PG · Admin View · Internal Use Only<br/><span class="gstin">GSTIN · 33BPJPR3798R1ZQ</span></div>
+<script>
+  function esc(s){ return (s||'').toString().replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function renderEmpty(){
+    document.getElementById('content').innerHTML = `
+      <div class="page-head reveal"><span class="eyebrow">Admin Panel</span><h1>No enquiry data in URL.</h1>
+        <p>This page shows a single customer enquiry. It is opened automatically from the WhatsApp message the site sends after a customer submits the enquiry form.</p></div>
+      <div class="empty reveal d2"><i class="fa-regular fa-inbox"></i><h2>Waiting for enquiries</h2>
+        <p>When a customer submits the enquiry form on the website, a WhatsApp message is sent to the admin number (+91 74879 01390) containing a link that opens this page with the full customer details.</p>
+        <a href="./index.html" class="btn btn-gold"><i class="fa-solid fa-globe"></i> Open Customer Site</a></div>`;
+  }
+  function fmtDate(iso){ if(!iso) return '—'; try{ return new Date(iso).toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'}); }catch(e){ return iso; } }
+  function fmtTs(iso){ if(!iso) return '—'; try{ return new Date(iso).toLocaleString('en-IN',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:true}); }catch(e){ return iso; } }
+  function decode(h){ try{ return JSON.parse(decodeURIComponent(escape(atob(h)))); }catch(e){ return null; } }
+  function render(d){
+    const cleanPhone = (d.phone||'').replace(/\D/g,'').replace(/^91/,'');
+    const waCustomer = `https://wa.me/91${cleanPhone}?text=${encodeURIComponent(`Hi ${d.name}, thanks for your enquiry to Green Elite PG (Ref: ${d.id}). We'd love to show you around — when would be a good time to visit?`)}`;
+    const telCustomer = `tel:+91${cleanPhone}`;
+    document.getElementById('content').innerHTML = `
+      <div class="page-head reveal"><span class="eyebrow">Customer Enquiry</span>
+        <h1>Hi Admin — new enquiry from <em style="color:var(--gold-2);font-style:normal">${esc(d.name)}</em>.</h1>
+        <p>Full details are below. Tap Call or WhatsApp the customer to follow up. Reference ID: <span style="font-family:'JetBrains Mono',monospace;color:var(--gold-2)">${esc(d.id)}</span></p></div>
+      <div class="ribbon reveal d2"><i class="fa-solid fa-clock"></i><div><strong>Submitted:</strong> ${fmtTs(d.ts)} &nbsp;·&nbsp; <strong>Ref:</strong> ${esc(d.id)}</div></div>
+      <div class="grid">
+        <div class="card primary reveal d2" style="grid-column:1/-1">
+          <h3><i class="fa-solid fa-user" style="color:var(--gold-2);margin-right:8px"></i> Customer Details</h3>
+          <div class="sub"><span class="pill">New</span> <span class="pill gold">${esc(d.room||'—')}</span></div>
+          <div class="row"><div class="lbl">Full Name</div><div class="val">${esc(d.name)||'—'}</div></div>
+          <div class="row"><div class="lbl">Phone</div><div class="val mono">${esc(d.phone)||'—'}</div></div>
+          <div class="row"><div class="lbl">Email</div><div class="val ${d.email?'':'muted'}">${esc(d.email)||'— skipped —'}</div></div>
+          <div class="row"><div class="lbl">Company / College</div><div class="val ${d.company?'':'muted'}">${esc(d.company)||'— skipped —'}</div></div>
+        </div>
+        <div class="card reveal d3">
+          <h3><i class="fa-solid fa-calendar-check" style="color:var(--gold-2);margin-right:8px"></i> Booking Preference</h3>
+          <div class="sub">What the customer wants</div>
+          <div class="row"><div class="lbl">Room Type</div><div class="val">${esc(d.room)||'—'}</div></div>
+          <div class="row"><div class="lbl">Move-in Date</div><div class="val">${fmtDate(d.moveDate)}</div></div>
+          <div class="row"><div class="lbl">Tentative Stay</div><div class="val ${d.stay==='Skipped'?'muted':''}">${esc(d.stay)||'—'}</div></div>
+          <div class="row"><div class="lbl">Budget (₹/mo)</div><div class="val ${d.budget?'':'muted'}">${d.budget?'₹'+esc(d.budget):'— not specified —'}</div></div>
+        </div>
+        <div class="card reveal d3">
+          <h3><i class="fa-solid fa-diagram-project" style="color:var(--gold-2);margin-right:8px"></i> Follow-up Status</h3>
+          <div class="sub">Track where this lead is</div>
+          <div class="status-card">
+            <div class="status-opt active" onclick="setStatus(this)"><div class="dot"></div><div><strong>New Enquiry</strong><small>Just received — reach out within 30 min</small></div></div>
+            <div class="status-opt" onclick="setStatus(this)"><div class="dot"></div><div><strong>Contacted</strong><small>Reached the customer on phone / WhatsApp</small></div></div>
+            <div class="status-opt" onclick="setStatus(this)"><div class="dot"></div><div><strong>Visit Scheduled</strong><small>Customer is coming to tour the PG</small></div></div>
+            <div class="status-opt" onclick="setStatus(this)"><div class="dot"></div><div><strong>Booked ✓</strong><small>Customer has confirmed the room</small></div></div>
+          </div>
+        </div>
+        <div class="card reveal d3" style="grid-column:1/-1">
+          <h3><i class="fa-solid fa-message" style="color:var(--gold-2);margin-right:8px"></i> Additional Message</h3>
+          <div class="sub">Anything special the customer mentioned</div>
+          <div class="row" style="grid-template-columns:1fr;padding:14px 0 0;border:none">
+            <div class="val ${d.message?'':'muted'}" style="background:rgba(0,0,0,.15);padding:18px 20px;border-radius:14px;font-weight:400;line-height:1.7">${esc(d.message)||'— no additional message —'}</div>
+          </div>
+        </div>
+        <div class="card reveal d3" style="grid-column:1/-1;background:linear-gradient(160deg,rgba(212,179,106,.12),rgba(47,174,127,.08));border-color:rgba(212,179,106,.25)">
+          <h3><i class="fa-solid fa-bolt" style="color:var(--gold-2);margin-right:8px"></i> Quick Actions</h3>
+          <div class="sub">Reach the customer in one tap</div>
+          <div class="actions">
+            <a href="${waCustomer}" target="_blank" rel="noopener" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp ${esc(d.name.split(' ')[0]||'')}</a>
+            <a href="${telCustomer}" class="btn btn-gold"><i class="fa-solid fa-phone"></i> Call Now</a>
+            <button class="btn btn-ghost" onclick="copyAll()"><i class="fa-regular fa-copy"></i> Copy All Details</button>
+            <button class="btn btn-ghost" onclick="window.print()"><i class="fa-solid fa-print"></i> Print / Save PDF</button>
+          </div>
+        </div>
+      </div>`;
+    window._enquiry = d;
+  }
+  function setStatus(el){ el.parentNode.querySelectorAll('.status-opt').forEach(o=>o.classList.remove('active')); el.classList.add('active'); }
+  function copyAll(){
+    const d = window._enquiry; if(!d) return;
+    const txt = [`Green Elite PG — Enquiry ${d.id}`,`Submitted: ${fmtTs(d.ts)}`,``,`Name: ${d.name}`,`Phone: ${d.phone}`,
+      d.email?`Email: ${d.email}`:null, d.company?`Company/College: ${d.company}`:null,
+      `Room: ${d.room}`,`Move-in: ${fmtDate(d.moveDate)}`,`Stay: ${d.stay}`,
+      d.budget?`Budget: ₹${d.budget}`:null, d.message?`Message: ${d.message}`:null].filter(Boolean).join('\n');
+    navigator.clipboard.writeText(txt).then(()=>alert('Copied!'));
+  }
+  const hash = location.hash.replace(/^#/,'');
+  if(!hash){ renderEmpty(); } else { const d = decode(hash); if(!d) renderEmpty(); else render(d); }
+</script>
+</body>
+</html>
